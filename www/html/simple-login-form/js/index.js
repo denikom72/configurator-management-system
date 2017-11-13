@@ -18,18 +18,15 @@ function sendData( id, uri, params ){
 		dataType: "json",
                 success: function(msg){
                         console.log("  Data Saved: " + JSON.stringify(msg));
-						console.log(msg[1]);
-						localStorage.setItem("id", 1);
-						localStorage.setItem("rand_date", msg[1]);
-						document.location.replace("http://localhost/configur-cms/index.cgi?rand_date="+localStorage.getItem("rand_date"));
-                                
+			console.log(msg[1]);
+			localStorage.setItem("id", 1);
+			localStorage.setItem("rand_date", msg[1]);
+			document.location.replace("http://localhost/configur-cms/index.cgi?rand_date="+localStorage.getItem("rand_date"));        
                 },
                 error: function(error){
                         alert( 'msg ' + "error: " + error);
                 }
         }); 
-
-
 	console.log( "\n" + ajaxUrl );
 	
 }
