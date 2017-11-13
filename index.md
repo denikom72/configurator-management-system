@@ -1,5 +1,5 @@
 
-This is a cgi-application, so it need a cgi-directory, to run a cgi-script. There are just two cgi-files, index.cgi and controller.cgi, the rest are pm-modules, respectively perl-classes. Soon i will prepare either a download as a docker-appliance and a video-demo.
+This is a cgi-application, so it need a cgi-directory, to run a cgi-script. There are just two cgi-files, index.cgi and controller.cgi, the rest are pm-modules, respectively perl-classes. Soon i will prepare either a download as a docker-appliance and a video-demo or something else.
 
 
 
