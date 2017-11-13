@@ -12,7 +12,7 @@ our @ISA = 'Exporter';
 our @EXPORT = qw( $db $db_user $db_pw $table);
 
 ###CREDENTIALS###
-our ( $db, $db_user, $db_pw ) = ("CONFIGURATORCMS", "root", "t00rt00r");
+our ( $db, $db_user, $db_pw ) = ("DB_NAME", "DB_USER", "DB_PASSWORD");
 
 our $table = "elems";
 
