@@ -40,7 +40,6 @@
 <script type="text/javascript">
 //_______ANGULAR PART____________
 var jsonSer;
-var cont = ["test1", "test2", "test3", "test4444"];
 if( !localStorage.getItem("nextCall")){
 	localStorage.setItem("cont2", JSON.stringify([]));
 }
@@ -60,7 +59,6 @@ function srtbl_right( listClass, listId1, listId2, listSize, scope ){
 	var dict = {};
 	var cnt = 0;
 	var outp;
-	//alert("ok");
 	$(listClass).sortable({
 		  connectWith: listClass,
 		  update: function(event, ui) {
@@ -72,10 +70,8 @@ function srtbl_right( listClass, listId1, listId2, listSize, scope ){
 		    	localStorage.setItem("cont2", JSON.stringify(order)); 
 		    	
 		    }
-			cnt++;
-			
-			//alert(order.length + " --- " + list.length);
-			var positions = scope.cont2.join("________\n");
+		    cnt++;
+		    var positions = scope.cont2.join("________\n");
 		    //positions += "\n + ID:" + $(this).attr('id') + " \n";
 		    
 		    $("#testpart").append("##### " + positions + " ###\n\n").css("color", "red");
@@ -90,20 +86,19 @@ function srtbl_right( listClass, listId1, listId2, listSize, scope ){
 			cnt = 0;
 			  
 	    	if ( $( listId2 + ' li').length > listSize ) {
-		        //alert('max reached');
-		        //$('p#notice').show().html( 'Max reached, drag right only');
-		        //$('p.l').hide();
-		        //$('#list2 li').addClass('dis');
-		        $(listId1).sortable({
-		            cancel: 'li'
+		        	//$('p#notice').show().html( 'Max reached, drag right only');
+		        	//$('p.l').hide();
+		        	//$('#list2 li').addClass('dis');
+		        	$(listId1).sortable({
+		        	cancel: 'li'
 	        	});   
 	   		} else {
-		        //$('p#notice').hide().html('');
-		        /* $('p.l').show();
-		        $('#list2 li').removeClass('dis'); */
+		        	//$('p#notice').hide().html('');
+		        	/* $('p.l').show();
+		        	$('#list2 li').removeClass('dis'); */
 				//cont.splice(cont.indexOf(this.id),1);
-		        $(listId1).sortable({
-		            cancel: ''
+		        	$(listId1).sortable({
+		            	cancel: ''
 		        });   
 	    	} 
 		}
