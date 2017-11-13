@@ -26,9 +26,9 @@ our $accIns_el = sub {
 ####CONSTRUCTOR### 
 sub new { 
 	my $type = shift;
-    my $self = {};       
+	my $self = {};       
 	bless $self, $type;
-    $self;
+	$self;
 }
 
 
@@ -44,7 +44,7 @@ sub printres {
 		
 	print "Content-type: text/json\n\n";
 	
-	my $inst = db_manager->new("CONFIGURATORCMS", "root", "t00rt00r");
+	my $inst = db_manager->new($db_name, $db_user, $db_pass");
 	
 	$dbh = $inst->con( $inst->{"db_name"}, $inst->{"user"}, $inst->{"pw"} );
 		
