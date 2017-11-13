@@ -37,7 +37,7 @@ $("#send").click(function(e){
 	var pw = document.getElementById("pw").value;
 	var id = localStorage.getItem("id");
 	var rand_date = localStorage.getItem("rand_date");
-	alert("click succesfull");
+	//alert("click succesfull");
 	//CALL CGI-LOGIN-SERVICE
 	sendData( "#send", "http://localhost/configur-cms/login.cgi", [["user", user],["pw", pw]] );
 	return false;
