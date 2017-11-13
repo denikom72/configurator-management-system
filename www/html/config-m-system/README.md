@@ -1,2 +1,1 @@
-Almost the whole frontend techs ( javascript, css, html, angular, jquery ) are postitioned into the frontend-project-root-folder in the document-root of the webserver,
-in this case "/var/www/html".
+All libs important for the frontend should be stored in the document-root of the webserver, in my case "/var/www/html", in the frontend-project-directory (). And own css and javascript-scripts or static html's too.
