@@ -4,7 +4,7 @@ package login;
 my( $elem, $tocateg, $new_cat, );
 
 ###DB-LOGIN-DATA
-my ( $db_user, $db_pass, $db_name ) = ("root", "t00rt00r", "CONFIGURATORCMS");
+my ( $db_user, $db_pass, $db_name ) = ("DB_USER", "DB_PASSWORD", "DB_NAME");
 
 my ( $table ) = ( "login" );
 #SQL-QUERIES AS VARs
