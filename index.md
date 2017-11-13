@@ -1,3 +1,8 @@
+
+This is a cgi-application, so it need a cgi-directory, to run a cgi-script. There are just two cgi-files, index.cgi and controller.cgi, the rest are pm-modules, respectively perl-classes. Soon i will prepare either a download as a docker-appliance and a video-demo.
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/denikom72/configurator-management-system/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
