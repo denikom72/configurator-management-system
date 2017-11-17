@@ -1,1 +1,1 @@
-All libs important for the frontend should be stored in the document-root of the webserver, in my case "/var/www/html", in the frontend-project-directory "config-m-system", like own css and javascript-scripts or static html's too.
+All libs important for the frontend and other files like css or static html's, should be stored in the document-root of a webserver, for example "/var/www/html" in the project-root-folder "config-m-system".
